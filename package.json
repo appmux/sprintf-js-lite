@@ -1,0 +1,25 @@
+{
+  "name": "sprintf-lite",
+  "version": "1.0.0",
+  "description": "Low-fat implementation of the sprintf() function for JavaScript.",
+  "directories": {
+    "lib": "./lib"
+  },
+  "main": "./lib/sprintf.js",
+  "scripts": {
+    "test": "echo \"It just works.\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/appmux/sprintf-js-lite.git"
+  },
+  "keywords": [
+    "sprintf"
+  ],
+  "author": "Alexander Korzh (appmux)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/appmux/sprintf-js-lite/issues"
+  },
+  "homepage": "https://github.com/appmux/sprintf-js-lite#readme"
+}
