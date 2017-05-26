@@ -1,5 +1,7 @@
 # sprintf() lite for JavaScript
-Low-fat implementation of the sprintf() function for JavaScript.
+
+Low-fat implementation of the sprintf() function for JavaScript that gets you all you need.
+
 
 ### Description
 
@@ -11,16 +13,29 @@ Returns a string produced according to the formatting string format.
 
 # Examples IRL
 
-### Example #1 Basic usage
+### Example #1 Basic anonymous keys replacement
 ```
-sprintf('/my/%s/api/%s', 'awesome', 'endpoint')
+sprintf('%s + %d = %s', 'Two', 3, 'Five')
+sprintf('/my/%s/api/%s/number/', 'awesome', 'endpoint', 1)
 ```
 The above example will output:
 ```
-/my/awesome/api/endpoint
+Two + 3 = Five
+/my/awesome/api/endpoint/number/1
 ```
 
-### Example #2 Argument swapping and reuse
+### Example #2 Basic named keys replacement
+```
+sprintf('Dear {firstName} {lastName}, ...', {firstName: 'John', lastName: 'Doe'})
+sprintf('/users/{userId}/orders/{orderId}', {userId: 654321, orderId: 987654321})
+```
+The above example will output:
+```
+Dear John Doe, ...
+/users/654321/orders/987654321
+```
+
+### Example #3 Argument swapping and reuse
 ```
 sprintf('That {location} was full of gals and only a {number} dudes, {number} dudes had a ball at that {location}.', {location: 'place', number: 'few'})
 ```
