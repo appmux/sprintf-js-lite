@@ -4,7 +4,7 @@ export default function sprintf(str, replace, ...args) {
 
         args.unshift(replace);
 
-        return str.replace(/%s/g, match => args[i++]);
+        return str.replace(/%[sd]/g, match => args[i++]);
     } else if (typeof replace === 'object') {
         return str.replace(/{((?:(?!{|}).)*)}/g, (...match) => replace[match[1]] || match[0]);
     }
