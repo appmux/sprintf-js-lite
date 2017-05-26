@@ -1,6 +1,6 @@
 {
   "name": "sprintf-lite",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Low-fat implementation of the sprintf() function for JavaScript.",
   "directories": {
     "lib": "./lib"
