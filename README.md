@@ -9,6 +9,12 @@ string sprintf (string $format [, mixed $args [, mixed $... ]])
 ```
 Returns a string produced according to the formatting string merged with replacement values.
 
+Supported type specifiers:
++ d — print an integer as is
++ u — print an integer as is
++ f — print a float as is
++ s — print a string as is
++ {key} - print a value of an object key as is.
 
 ### Install
 ```
