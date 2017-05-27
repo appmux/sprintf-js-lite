@@ -4,16 +4,32 @@ Low-fat implementation of the sprintf() function for JavaScript that gets you al
 
 
 ### Description
-
 ```
 string sprintf (string $format [, mixed $args [, mixed $... ]])
 ```
+Returns a string produced according to the formatting string merged with replacement values.
 
-Returns a string produced according to the formatting string format.
+
+### Install
+```
+npm install sprintf-lite
+```
+
+### Use
+ES5
+```
+var sprintf = require('sprintf-lite')
+```
+
+ES6
+```
+import sprintf from 'sprintf-lite'
+```
 
 # Examples IRL
 
 ### Example #1 Basic anonymous keys replacement
+Quick string formatting.
 ```
 sprintf('%s + %d = %s', 'Two', 3, 'Five')
 sprintf('/my/%s/api/%s/number/', 'awesome', 'endpoint', 1)
@@ -25,6 +41,7 @@ Two + 3 = Five
 ```
 
 ### Example #2 Basic named keys replacement
+Embedding object keys into configuration strings or simple templates.
 ```
 sprintf('Dear {firstName} {lastName}, ...', {firstName: 'John', lastName: 'Doe'})
 sprintf('/users/{userId}/orders/{orderId}', {userId: 654321, orderId: 987654321})
@@ -36,6 +53,7 @@ Dear John Doe, ...
 ```
 
 ### Example #3 Argument swapping and reuse
+Keys can be used multiple times in any arbitrary order.
 ```
 sprintf('That {location} was full of gals and only a {number} dudes, {number} dudes had a ball at that {location}.', {location: 'place', number: 'few'})
 ```
