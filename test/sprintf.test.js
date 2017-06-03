@@ -19,8 +19,8 @@ describe('sprintf-lite', function () {
 
     it('should perform argument swapping and reuse', function () {
         assert.equal(
-            'That place was full of gals and only a few dudes, few dudes had a ball at that place.',
-            sprintf('That {location} was full of gals and only a {number} dudes, {number} dudes had a ball at that {location}.', {location: 'place', number: 'few'})
+            'In America, you install a package, in Soviet Russia, a package installs YOU!',
+            sprintf('In America, you {do} {what}, in Soviet Russia, {what} {do}s YOU!', {do: 'install', what: 'a package'})
         )
     })
 })
