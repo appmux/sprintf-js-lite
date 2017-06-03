@@ -15,7 +15,25 @@
     "url": "git+https://github.com/appmux/sprintf-js-lite.git"
   },
   "keywords": [
-    "sprintf"
+    "sprintf",
+    "vsprintf",
+    "printf",
+    "print",
+    "sprintf",
+    "string",
+    "format",
+    "formatting",
+    "template",
+    "parser",
+    "api",
+    "path",
+    "pathmap",
+    "endpoint",
+    "express",
+    "route",
+    "routing",
+    "swagger",
+    "placeholder"
   ],
   "author": "Alexander Korzh (appmux)",
   "license": "MIT",
