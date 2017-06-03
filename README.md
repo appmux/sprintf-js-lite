@@ -75,9 +75,9 @@ Dear John Doe, ...
 ### Example #3 Argument swapping and reuse
 Keys can be used multiple times in any arbitrary order.
 ```
-sprintf('That {location} was full of gals and only a {number} dudes, {number} dudes had a ball at that {location}.', {location: 'place', number: 'few'})
+sprintf('In America, you {do} {what}, in Soviet Russia, {what} {do}s YOU!', {do: 'install', what: 'a package'})
 ```
 The above example will output:
 ```
-That place was full of gals and only a few dudes, few dudes had a ball at that place.
+In America, you install a package, in Soviet Russia, a package installs YOU!
 ```
